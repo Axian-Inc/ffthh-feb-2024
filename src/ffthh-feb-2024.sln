@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiFareRegression", "TaxiFareRegression\TaxiFareRegression.csproj", "{264FDBE7-307B-4EF5-86C8-55D0E36684F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredictionAPI", "PredictionAPI\PredictionAPI.csproj", "{444B340F-FC39-4772-B350-C1650FF3CF44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2E53E99B-7834-461F-AA36-519CFCF9AF4E}"
+	ProjectSection(SolutionItems) = preProject
+		..\data\DataSets-Citation.txt = ..\data\DataSets-Citation.txt
+		..\data\taxi-fare-full.csv = ..\data\taxi-fare-full.csv
+		..\data\taxi-fare-test.csv = ..\data\taxi-fare-test.csv
+		..\data\taxi-fare-train.csv = ..\data\taxi-fare-train.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{264FDBE7-307B-4EF5-86C8-55D0E36684F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264FDBE7-307B-4EF5-86C8-55D0E36684F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264FDBE7-307B-4EF5-86C8-55D0E36684F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264FDBE7-307B-4EF5-86C8-55D0E36684F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444B340F-FC39-4772-B350-C1650FF3CF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444B340F-FC39-4772-B350-C1650FF3CF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444B340F-FC39-4772-B350-C1650FF3CF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444B340F-FC39-4772-B350-C1650FF3CF44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3B5D4A5-8E27-4B6B-8697-8854DBEB5856}
+	EndGlobalSection
+EndGlobal
