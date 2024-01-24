@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
-    <PackageReference Include="PLplot" Version="0.8.2" />
   </ItemGroup>
 
 </Project>

@@ -26,9 +26,9 @@ This project makes use of .NET 8, ML.NET, and one of Visual Studio, or Visual St
 1. Run the TaxiFareRegression project (Console App) as a console app or with the debugger. A `TaxiFareModel.zip` should materialize under `./trained-models/TaxiFareModel.zip`
 1. Run the X project as a console app or with the debugger. A `ModelName.zip` should materialize under `./trained-models/TaxiFareModel.zip`
 1. Run the PredictionAPI project and use the swagger published at `https://localhost:7072/swagger/index.html` to make predictions.
-__Example:__ Taxi Fare Prediction (tripTime is in seconds, tripDistance is in miles)
+__Example:__ Taxi fare prediction (tripTime is in seconds, tripDistance is in miles)
 ```
-POST /api/Prediction
+POST /api/prediction/taxifare
 {
   "passengerCount": 2,
   "tripTime": 935,
@@ -39,16 +39,19 @@ Response
   "fareAmount": 24.927794
 }
 ```
-__Example Next:__ Taxi Fare Prediction (tripTime is in seconds, tripDistance is in miles)
+__Example Next:__ Iris class prediction (all fields are in centimeters)
 ```
-POST /api/Prediction
+POST /api/prediction/iris
 {
-  "passengerCount": 2,
-  "tripTime": 935,
-  "tripDistance": 9.6
+  "sepalLength": 4.1,
+  "sepalWidth": 3.3,
+  "petalLength": 1.6,
+  "petalWidth": 0.2
 }
 Response
 {
-  "fareAmount": 24.927794
+  "setosa": 0.9971434,
+  "versicolor": 0.0028566187,
+  "verginica": 0.00000000514
 }
 ```

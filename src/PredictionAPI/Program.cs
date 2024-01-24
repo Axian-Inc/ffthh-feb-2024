@@ -1,7 +1,7 @@
 
+using FfthhFeb2024.IrisMulticlassClassification.DataStructures;
 using FfthhFeb2024.TaxiFareRegression.DataStructures;
 using Microsoft.Extensions.ML;
-using RegreFfthhFeb2024.TaxiFareRegression.DataStructures;
 
 namespace FfthhFeb2024.PredictionAPI
 {
@@ -18,13 +18,16 @@ namespace FfthhFeb2024.PredictionAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // Add path to model
-            var modelPath = "../../../../../trained-models/TaxiFareModel.zip";
-            //var modelPath = "TaxiFareModel.zip";
-            var absolutePath = GetAbsolutePath(modelPath);
-
+            // Add DI for predictive models (should be static) and enable hot reloading.
+            var taxiModelPath = "../../../../../trained-models/TaxiFareModel.zip";
+            var taxiAbsolutePath = GetAbsolutePath(taxiModelPath);
             builder.Services.AddPredictionEnginePool<TaxiTrip, TaxiTripFarePrediction>()
-                .FromFile(modelName: "TaxiFareModel", filePath: absolutePath, watchForChanges: true);
+                .FromFile(modelName: "TaxiFareModel", filePath: taxiAbsolutePath, watchForChanges: true);
+
+            var irisModelPath = "../../../../../trained-models/IrisClassificationModel.zip";
+            var irisAbsolutePath = GetAbsolutePath(irisModelPath);
+            builder.Services.AddPredictionEnginePool<IrisData, IrisPrediction>()
+                .FromFile(modelName: "IrisClassificationModel", filePath: irisAbsolutePath, watchForChanges: true);
 
             var app = builder.Build();
 

@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML.Data;
 
-namespace RegreFfthhFeb2024.TaxiFareRegression.DataStructures
+namespace FfthhFeb2024.TaxiFareRegression.DataStructures
 {
     public class TaxiTripFarePrediction
     {

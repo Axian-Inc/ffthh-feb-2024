@@ -2,10 +2,9 @@
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using PLplot;
-using RegreFfthhFeb2024.TaxiFareRegression.DataStructures;
 using System;
 using System.Diagnostics;
-using TaxiFareRegression.Common;
+using FfthhFeb2024.TaxiFareRegression.Common;
 
 namespace FfthhFeb2024.TaxiFareRegression // Note: actual namespace depends on the project name.
 {

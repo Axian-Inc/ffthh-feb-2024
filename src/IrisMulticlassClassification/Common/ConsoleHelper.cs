@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static Microsoft.ML.TrainCatalogBase;
 
-namespace FfthhFeb2024.TaxiFareRegression.Common
+namespace FfthhFeb2024.IrisMulticlassClassification.Common
 {
     internal static class ConsoleHelper
     {

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IrisMulticlassClassification\IrisMulticlassClassification.csproj" />
     <ProjectReference Include="..\TaxiFareRegression\TaxiFareRegression.csproj" />
   </ItemGroup>
 

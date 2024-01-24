@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaxiFareRegression.Common
+namespace FfthhFeb2024.TaxiFareRegression.Common
 {
     internal class TaxiTripCsvReader
     {

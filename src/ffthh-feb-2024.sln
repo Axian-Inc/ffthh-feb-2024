@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2E53E99B-7834-461F-AA36-519CFCF9AF4E}"
 	ProjectSection(SolutionItems) = preProject
 		..\data\DataSets-Citation.txt = ..\data\DataSets-Citation.txt
+		..\data\iris-full.txt = ..\data\iris-full.txt
+		..\data\iris-test.txt = ..\data\iris-test.txt
+		..\data\iris-train.txt = ..\data\iris-train.txt
 		..\data\taxi-fare-full.csv = ..\data\taxi-fare-full.csv
 		..\data\taxi-fare-test.csv = ..\data\taxi-fare-test.csv
 		..\data\taxi-fare-train.csv = ..\data\taxi-fare-train.csv
@@ -19,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisMulticlassClassification", "IrisMulticlassClassification\IrisMulticlassClassification.csproj", "{AFA28B45-C2C9-4570-A24E-D64275341B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +39,10 @@ Global
 		{444B340F-FC39-4772-B350-C1650FF3CF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444B340F-FC39-4772-B350-C1650FF3CF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444B340F-FC39-4772-B350-C1650FF3CF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA28B45-C2C9-4570-A24E-D64275341B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA28B45-C2C9-4570-A24E-D64275341B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA28B45-C2C9-4570-A24E-D64275341B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA28B45-C2C9-4570-A24E-D64275341B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
