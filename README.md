@@ -1,6 +1,6 @@
 # FFTHH Feb 2024
 ## Machine Learning (Supervised) with ML.NET and .NET Core Web API
-This project is code intended to pair with the following FFTHH sessions:
+This project is intended to pair with the following FFTHH sessions:
 * [January - Getting Started, AI/ML (Supervised Learning) - Part A](https://axianinc.atlassian.net/wiki/spaces/AXLND/pages/2845114386/January+-+Getting+Started+AI+ML+Supervised+Learning+-+Part+A)
 * [February (Jan 25th) - Supervised Learning (Testing and MLOps) - Part B](https://axianinc.atlassian.net/wiki/spaces/AXLND/pages/2879848449/February+Jan+25th+-+Supervised+Learning+-+Part+B)
 
@@ -11,7 +11,7 @@ This public repository remixes examples from the [ML.NET Machine Learning Sample
 * Loading a trained model, and exposing access via API
 
 ## Getting Started
-This project makes use of .NET 8, ML.NET, and one of Visual Studio, or Visual Studio Code to examine/explore code. The following will need to be installed on your workstation for the code to compile/run.
+This project makes use of .NET 8, ML.NET, and one of Visual Studio, or Visual Studio Code to examine/explore code. The following will need to be installed on your workstation.
 
 - [.NET v8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - [ML.NET](https://github.com/dotnet/docs/blob/main/docs/machine-learning/how-to-guides/install-ml-net-cli.md)
@@ -26,7 +26,7 @@ This project makes use of .NET 8, ML.NET, and one of Visual Studio, or Visual St
 ### TaxiFare Regression
 This project builds a regression model based off of taxi fare data provided by New York City. The data is housed at `{projectRoot}/data/` and has already been broken up into test and training sets.
 
-The model is saved to `{projectRoot}/trained-models/TaxiFareModel.zip` and is needed by the `Prediction API` project.
+The model is saved to `{projectRoot}/trained-models/TaxiFareModel.zip` and is needed by the `Prediction API` project to issue taxi fare predictions.
 
 1. Run the TaxiFareRegression project (Console App) 
 ```
@@ -38,7 +38,7 @@ dotnet run --project ./src/TaxiFareRegression/
 ### Iris Classification
 This project builds a classification model based off of iris (flower) petal/sepal lengths/widths recorded in centimeters. The data is provided by kaggle.com and housed at `{projectRoot}/data/` and has already been broken up into test and training sets.
 
-The model is saved to `{projectRoot}/trained-models/IrisClassificationModel.zip` and is needed by the `Prediction API` project.
+The model is saved to `{projectRoot}/trained-models/IrisClassificationModel.zip` and is needed by the `Prediction API` project to make iris classification predictions.
 
 1. Run the TaxiFareRegression project (Console App) 
 ```
@@ -48,7 +48,7 @@ dotnet run --project ./src/IrisMulticlassClassification/
 3. And a model is saved at `./trained-models/IrisClassificationModel.zip`
 
 ### Prediction API
-This project depends on the prior two (`TaxiRegression` and `IrisMulticlassClassification` having both been sucessfully run and models saved in the `./trained-models/` folder).
+This project depends on the prior two (`TaxiRegression` and `IrisMulticlassClassification`) projects having both been sucessfully run and models saved to the `./trained-models/` folder).
 
 First verify that you have a valid .NET development certificate setup.
 ```
@@ -60,10 +60,11 @@ If you don't have a valid certificate. Run the following.
 dotnet dev-certs https --trust
 ```
 
+#### Launch and Query Prediction API
 1. Launch the Prediction API using an IDE or via the command line.
 
 ```
-dotnet run --project ./src/Evntd.EventStoreDB.WebApi --launch-profile https
+dotnet run --project ./src/PredictionAPI/ --launch-profile https
 ```
 2. Navigate a browser to https://localhost:7072/swagger/index.html
 3. Use the swagger published to request predictions.
