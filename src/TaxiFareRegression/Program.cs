@@ -33,10 +33,17 @@ namespace FfthhFeb2024.TaxiFareRegression // Note: actual namespace depends on t
             TestSinglePrediction(mlContext);
 
             // Paint regression distribution chart for a number of elements read from a Test DataSet file
-            PlotRegressionChart(mlContext, testDataPath, 50, args);
+            try 
+            {
+                PlotRegressionChart(mlContext, testDataPath, 50, args);
+            }
+            catch (DllNotFoundException)
+            {
+                Console.WriteLine("Plplot dependencies not found. Regression chart not generated.");
+            }
 
-            Console.WriteLine("Press any key to exit..");
-            Console.ReadLine();
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
 
         private static ITransformer TrainAndSaveModel(MLContext mlContext)
