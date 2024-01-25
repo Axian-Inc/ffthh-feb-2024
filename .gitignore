@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # MacOS
 .DS_Store
+
+# Regression Project
+.png

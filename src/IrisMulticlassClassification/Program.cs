@@ -32,7 +32,7 @@ namespace FfthhFeb2024.IrisMulticlassClassification
             TestSomePredictions(mlContext);
 
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
-            Console.ReadKey();
+            Console.Read();
         }
 
         private static void BuildTrainEvaluateAndSaveModel(MLContext mlContext)

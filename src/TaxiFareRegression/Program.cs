@@ -41,9 +41,9 @@ namespace FfthhFeb2024.TaxiFareRegression // Note: actual namespace depends on t
             {
                 Console.WriteLine("Plplot dependencies not found. Regression chart not generated.");
             }
-
+ 
             Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            Console.Read();
         }
 
         private static ITransformer TrainAndSaveModel(MLContext mlContext)
