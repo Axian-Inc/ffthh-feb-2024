@@ -28,6 +28,8 @@ This project builds a regression model based off of taxi fare data provided by N
 
 The model is saved to `{projectRoot}/trained-models/TaxiFareModel.zip` and is needed by the `Prediction API` project to issue taxi fare predictions.
 
+![Taxi fare meter](https://miro.medium.com/v2/resize:fit:600/1*m4Kv3w4-PnWDG4H4ObJZfw.png)
+
 1. Run the TaxiFareRegression project (Console App) 
 ```
 dotnet run --project ./src/TaxiFareRegression/
