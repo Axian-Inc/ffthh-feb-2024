@@ -38,6 +38,18 @@ dotnet run --project ./src/TaxiFareRegression/
 ### Iris Classification
 This project builds a classification model based off of iris (flower) petal/sepal lengths/widths recorded in centimeters. The data is provided by kaggle.com and housed at `{projectRoot}/data/` and has already been broken up into test and training sets.
 
+#### A Little Bit about Irises
+An Iris is a flower that has several species. They're not always easy to identify (see below), but their petals and sepals have ratios of size that follow a pattern. This pattern is trained into a model using the data in this project.
+
+![Examples of Versicolor, Setosa, and Virginica iris species](https://miro.medium.com/v2/resize:fit:540/0*Uw37vrrKzeEWahdB) 
+
+![Example of how petal and sepal size ratios inform iris species identification](https://miro.medium.com/v2/resize:fit:540/0*7H_gF1KnslexnJ3s) 
+
+#### Flower Defnitions
+- **Sepal**: The outer parts of the flower (often green and leaf-like) that enclose a developing bud.
+- **Petal**: The parts of a flower that are often conspicuously colored.
+- **Stamen**: The pollen producing part of a flower, usually with a slender filament supporting the anther.
+
 The model is saved to `{projectRoot}/trained-models/IrisClassificationModel.zip` and is needed by the `Prediction API` project to make iris classification predictions.
 
 1. Run the TaxiFareRegression project (Console App) 
